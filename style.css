@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+:root{
+  --primaryColor:#7e1460;
+  --secondaryColor:#FF7A33;
+  --thirdColor:#ffe3b3;
+  --fothColor:#ffc172;
+}
+
+*,*::after,*::before{
+  box-sizing:content-box;
+
+}
+.biggest{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
+  
+}
+.container{
+  display: flex;
+  width: 70%;
+  padding: 30px;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border:1px solid var(--secondaryColor);
+  border-radius: 15px ;
+
+  
+}
+.container .ust .alt {
+  height: 50%;
+  display: flex;
+  
+
+
+}
+.container .alt {
+  width :100%;
+}
+h1,h2,p{
+  font-family: 'Outfit',sans-serif;
+  margin: 0;
+
+}
+p{
+  font-size:18px ;
+}
+
+.header{
+  width: 90%;
+  /* padding: 10px; */
+  
+  
+}
+.header img{
+  width: 100%;
+  object-fit: cover;
+}
+.header  :hover{
+  box-shadow: 0px  40px 100px 5px var(--secondaryColor);
+ 
+}
+
+#saat>h3{
+  /* font-size: x-small; */
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+}
+
+@media only screen and (min-width:768px)
+{
+  .container{
+    width: 60%;
+  }
+  .header{
+    width: 80%;
+    margin:auto;
+    margin-bottom: 10px;
+  }
+  #saat>h3,#hosgeldin{
+    /* font-size: x-small; */
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Outfit',Arial, Helvetica, sans-serif;
+  }
+  p{
+    font-size:24px ;
+  }
+}
